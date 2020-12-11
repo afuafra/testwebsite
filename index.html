@@ -9,19 +9,21 @@
 <link rel="shortcut icon" href="#">
 <link rel="stylesheet" type="text/css" href="style.css"/>
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:400,300italic,300,400italic,700,700italic|Playfair+Display:400,700,400italic,700italic"/>
+<script src="counter.js"></script>
 </head>
-<body>
+<body class="home-template">
 <div class="site-wrapper">
 	<nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="index.html"><img src="Images/logo.png" alt="Fashion Critiques"/></a>
 	<ul id="menu">
 		<li class="nav-home nav-current" ><a href="index.html">Home</a></li>
-		<li class="nav-article-example" ><a href="article.html">More Photos</a></li>
-		<li class="nav-about-us" ><a href="about.html">Selling</a></li>
-		<li class="nav-author-page" role="presentation"><a href="author.html">Contact</a></li>
+		<li class="nav-article-example" ><a href="Morephotos.html">More Photos</a></li>
+		<li class="nav-about-us" ><a href="Selling.html">Selling</a></li>
+		<li class="nav-author-page" role="presentation"><a href="contact.html">Contact</a></li>
 		<span class="socialheader">
-		<a href="#"><span class='symbol'>circletwitterbird</span></a>
-		<a href="#"><span class='symbol'>circlefacebook</span></a>
-		<a href="#"><span class='symbol'>circlegoogleplus</span></a>
+        <a href="https://www.instagram.com/afuafra"><span class='symbol'>circleinstagram</span></a>            
+		<a href="https://twitter.com/afuafra"><span class='symbol'>circletwitterbird</span></a>
+		<a href="https://www.facebook.com/onelastbasterd"><span class='symbol'>circlefacebook</span></a>
 		<a href="mailto:afu3123@gmail.com"><span class='symbol'>circleemail</span></a>
 		</span>
 	</ul>
@@ -36,7 +38,8 @@
 		</div>
 	</div>
 	<a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
-	</header>
+    </header>
+    <figure>
 	<div class="wraps">
 		<div class="grid">
 				<article class="post">
@@ -46,13 +49,26 @@
                    <p>Alifushi and Etthingili (Powell Islands in the Admiralty Chart) stand on a detached reef of their own with very deep waters (no sounding), between this isolated reef shelf and the northern end of the main Northern Maalhosmadulhu Atoll.
 
                     Alifushi is 207.43 km (129 mi; 112 nmi) north of the country's capital, Malé</p>
-					</header>
-						<img class="post-content img" src="Images/alifushi.jpg">
-					<a><span>&#169;</span>Ibrahim Afrah</a>
-					</footer>
+                    </header>
+                    <img src="Images/alifushi.jpg">
+                        <a><span>&#169;</span>Ibrahim Afrah</a>
+                        
 				</div>
 				</article>
             </div>
+            <figcaption>
+                <div class="like-number">
+                    <p><span id="likes">0</span>Likes</p>
+                </div>
+                <div class="like-icon"><button onclick="likes()"><img src="https://cdn3.iconfinder.com/data/icons/complete-set-icons/128/favourite512x512.png" alt="like-icon"></button>
+                </div>
+                <p> click the icon to like</p>
+            </figcaption>
+    
+            <button onclick="reset()" type="reset">Reset Likes</button>
+
+            
+
             <div class="wraps">
                 <div class="grid">
                         <article class="post">
@@ -63,10 +79,23 @@
                             </header>
                                 <img src="Images/Dharavandhoo.jpg">
                             <a><span>&#169;</span>Ibrahim Afrah</a>
-                            </footer>
                         </div>
                         </article>
                     </div>
+                    <figcaption>
+                        <div class="like-number">
+                            <p><span id="likes">0</span>Likes</p>
+                        </div>
+                        <div class="like-icon"><button onclick="likes()"><img src="https://cdn3.iconfinder.com/data/icons/complete-set-icons/128/favourite512x512.png" alt="like-icon"></button>
+                        </div>
+                        <p> click the icon to like</p>
+                    </figcaption>
+            
+                    <button onclick="reset()" type="reset">Reset Likes</button>
+            
+
+
+
                     <div class="wraps">
                         <div class="grid">
                                 <article class="post">
@@ -82,6 +111,16 @@
                                 </div>
                                 </article>
                             </div>
+                            <figcaption>
+                                <div class="like-number">
+                                    <p><span id="likes">0</span>Likes</p>
+                                </div>
+                                <div class="like-icon"><button onclick="likes()"><img src="https://cdn3.iconfinder.com/data/icons/complete-set-icons/128/favourite512x512.png" alt="like-icon"></button>
+                                </div>
+                                <p> click the icon to like</p>
+                            </figcaption>
+                    
+                            <button onclick="reset()" type="reset">Reset Likes</button>
                             <div class="wraps">
                                 <div class="grid">
                                         <article class="post">
@@ -96,6 +135,16 @@
                                         </div>
                                         </article>
                                     </div>
+                                    <figcaption>
+                                        <div class="like-number">
+                                            <p><span id="likes">0</span>Likes</p>
+                                        </div>
+                                        <div class="like-icon"><button onclick="likes()"><img src="https://cdn3.iconfinder.com/data/icons/complete-set-icons/128/favourite512x512.png" alt="like-icon"></button>
+                                        </div>
+                                        <p> click the icon to like</p>
+                                    </figcaption>
+                            
+                                    <button onclick="reset()" type="reset">Reset Likes</button>
                                     <div class="wraps">
                                         <div class="grid">
                                                 <article class="post">
@@ -110,7 +159,20 @@
                                                 </div>
                                                 </article>
                                             </div>
+                                            <figcaption>
+                                                <div class="like-number">
+                                                    <p><span id="likes">0</span>Likes</p>
+                                                </div>
+                                                <div class="like-icon"><button onclick="likes()"><img src="https://cdn3.iconfinder.com/data/icons/complete-set-icons/128/favourite512x512.png" alt="like-icon"></button>
+                                                </div>
+                                                <p> click the icon to like</p>
+                                            </figcaption>
+                                    
+                                            <button onclick="reset()" type="reset">Reset Likes</button>
+                                            <script type="text/javascript" src="co"></script>
 			
 </div>
+
+</figure>
 </body>
 </html>
